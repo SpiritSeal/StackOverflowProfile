@@ -1,9 +1,10 @@
 
-# Profile
+Profile image: ![](https://i.stack.imgur.com/uIGbf.jpg?s=256&g=1)
+
+# Spyre's Stack Overflow Profile
 
 ## Basics
 
-- Display Name: Spyre
 - Location: Scottsdale, AZ, USA
 
 ## Stats

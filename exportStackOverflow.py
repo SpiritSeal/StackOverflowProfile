@@ -93,11 +93,12 @@ def build_profile(user_id):
 
         # Build the Markdown profile
     profile = """
-# Profile
+Profile image: ![]({})
+
+# {}'s Stack Overflow Profile
 
 ## Basics
 
-- Display Name: {}
 - Location: {}
 
 ## Stats
@@ -111,7 +112,9 @@ def build_profile(user_id):
 
 - Website: {}
 - Stack Overflow: https://stackoverflow.com/users/{}/{}
-    """.format(user["display_name"], user["location"], user["reputation"], user["badge_counts"]["bronze"], user["badge_counts"]["silver"], user["badge_counts"]["gold"], user["website_url"], user["user_id"], user["display_name"])
+    """.format(user["profile_image"], user["display_name"], user["location"], user["reputation"], user["badge_counts"]["bronze"], user["badge_counts"]["silver"], user["badge_counts"]["gold"], user["website_url"], user["user_id"], user["display_name"])
+    
+    #.format(user["display_name"], user["location"], user["reputation"], user["badge_counts"]["bronze"], user["badge_counts"]["silver"], user["badge_counts"]["gold"], user["website_url"], user["user_id"], user["display_name"])
 
     # Return the Markdown profile
     return profile
